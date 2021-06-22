@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav id="navbar">
+        <header class="nav-head">
+            Python Basics
+        </header>
+        <ul class="nav-bar">
+            <li><a href="#Python_Introduction" class="nav-link">Python Introduction</a></li>
+            <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Python_Data_Types" class="nav-link">Python Data Types</a></li>
+            <li><a href="#Python_Collections" class="nav-link">Python Collections</a></li>
+            <li><a href="#List" class="nav-link">List</a></li>
+            <li><a href="#Tuple" class="nav-link">Tuple</a></li>
+            <li><a href="#Set" class="nav-link">Set</a></li>
+            <li><a href="#Dictionary" class="nav-link">Dictionary</a></li>
+            <li><a href="#Python_Conditions_and_If_statements" class="nav-link">Python Conditions and If statements</a>
+            </li>
+            <li><a href="#Python_While_Loops" class="nav-link">Python While Loops</a>
+            </li>
+            <li><a href="#Python_For_Loops" class="nav-link">Python For Loops</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Python_Introduction">
+            <header>Python Introduction</header>
+            <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its
+                high-level built in data structures, combined with dynamic typing and dynamic binding, make it very
+                attractive for Rapid Application Development, as well as for use as a scripting or glue language to
+                connect existing components together. Python's simple, easy to learn syntax emphasizes readability and
+                therefore reduces the cost of program maintenance. Python supports modules and packages, which
+                encourages program modularity and code reuse. The Python interpreter and the extensive standard library
+                are available in source or binary form without charge for all major platforms, and can be freely
+                distributed.</p>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <p>Python is an interpreted programming language, this means that as a developer you write Python (.py)
+                files in a text editor and then put those files into the python interpreter to be executed. <br>
+                The way to run a python file is like this on the command line:</p>
+            <code>C:\Users\Your Name>python helloworld.py</code>
+            <p>Where "helloworld.py" is the name of your python file.<br>
+                Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+            <code>print("Hello, World!")</code>
+            <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your
+                file, and run:</p>
+            <code>C:\Users\Your Name>python helloworld.py</code>
+            <p>The output should read:</p>
+            <code>Hello, World!</code>
+            <p>Congratulations, you have written and executed your first Python program.</p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Creating Variables
+                Variables are containers for storing data values. <br>
+                Unlike other programming languages, Python has no command for declaring a variable. <br>
+                A variable is created the moment you first assign a value to it. <br>
+                Example:
+            </p>
+            <code>x = 5 <br>
+                y = "John" <br>
+                print(x)//5 <br>
+                print(y)//John <br>
+            </code>
+            <p>Variables do not need to be declared with any particular type and can even change type after they have
+                been set.</p>
+        </section>
+        <section class="main-section" id="Python_Data_Types">
+            <header>Python Data Types</header>
+            <p>In programming, data type is an important concept.
+
+                Variables can store data of different types, and different types can do different things.
+
+                Python has the following data types built-in by default, in these categories:</p>
+            <ul>
+                <li>Text Type: str</li>
+                <li>Numeric Types: int, float, complex</li>
+                <li>Sequence Types: list, tuple, range</li>
+                <li>Mapping Type: dict</li>
+                <li>Set Types: set, frozenset</li>
+                <li>Boolean Type: bool</li>
+                <li>Binary Types: bytes, bytearray, memoryview</li>
+            </ul>
+
+            <h3>Getting the Data Type</h3>
+            <p>You can get the data type of any object by using the <code>type()</code> function.</p>
+        </section>
+        <section class="main-section" id="Python_Collections">
+            <header>Python Collections</header>
+            <p>There are four collection data types in the Python programming language:
+            <ul>
+                <li>List is a collection which is ordered and changeable. Allows duplicate members.</li>
+                <li>Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+                <li>Set is a collection which is unordered and unindexed. No duplicate members.</li>
+                <li>Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.</li>
+            </ul>
+            <p>choosing a collection type, it is useful to understand the properties of that type. Choosing the right
+                type for a particular data set could mean retention of meaning, and, it could mean an increase in
+                efficiency or security.</p>
+            </p>
+        </section>
+        <section class="main-section" id="List">
+            <header>List</header>
+            <p>A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
+                <br>
+                Example <br>
+                Create a List:
+            </p>
+            <code>thislist = ["apple", "banana", "cherry"] <br>
+                print(thislist)//['apple', 'banana', 'cherry']</code>
+            <p>You access the list items by referring to the index number: <br>
+                Example <br>
+                Print the second item of the list:</p>
+            <code>thislist = ["apple", "banana", "cherry"] <br>
+                print(thislist[1])//banana</code> <br> <br>
+        </section>
+        <section class="main-section" id="Tuple">
+            <header>Tuple</header>
+            <p>A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round
+                brackets. <br>
+                Example <br>
+                Create a Tuple:
+            </p>
+            <code>thistuple = ("apple", "banana", "cherry") <br>
+                print(thistuple)//('apple', 'banana', 'cherry')</code>
+            <p>You can access tuple items by referring to the index number, inside square brackets: <br>
+                Example <br>
+                Print the second item in the tuple:</p>
+            <code>thistuple = ("apple", "banana", "cherry") <br>
+                print(thistuple[1])//banana</code> <br><br>
+
+        </section>
+
+        <section class="main-section" id="Set">
+            <header>Set</header>
+            <p>A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+                <br>
+                Example <br>
+                Create a Set:
+            </p>
+            <code>thisset = {"apple", "banana", "cherry"} <br>
+                print(thisset)//{'apple', 'cherry', 'banana'}</code>
+            <p>Note: Sets are unordered, so you cannot be sure in which order the items will appear.</p>
+            <p>You cannot access items in a set by referring to an index, since sets are unordered the items has no
+                index. <br>
+                But you can loop through the set items using a for loop, or ask if a specified value is present in a
+                set, by using the in keyword.</p>
+        </section>
+        <section class="main-section" id="Dictionary">
+            <header>Dictionary</header>
+            <p>A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are
+                written with curly brackets, and they have keys and values.<br>
+
+                Example <br>
+                Create and print a dictionary:</p>
+            <code>thisdict = { <br>
+                "brand": "Ford",<br>
+                "model": "Mustang",<br>
+                "year": 1964 <br>
+              } <br>
+              print(thisdict)//{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}</code>
+            <p>You can access the items of a dictionary by referring to its key name, inside square brackets: <br>
+
+                Example <br>
+                Get the value of the "model" key:</p>
+            <code>x = thisdict["model"]//Mustang</code>
+            <p>There is also a method called get() that will give you the same result: <br>
+
+                Example <br>
+                Get the value of the "model" key:</p>
+            <code>x = thisdict.get("model")//Mustang</code><br><br>
+        </section>
+        <section class="main-section" id="Python_Conditions_and_If_statements">
+            <header>Python Conditions and If statements</header>
+            <p>Python supports the usual logical conditions from mathematics:
+            <ul>
+                <li>Equals: a == b</li>
+                <li>Not Equals: a != b</li>
+                <li>Less than: a < b</li>
+                <li>Less than or equal to: a <= b</li>
+                <li>Greater than: a > b</li>
+                <li>Greater than or equal to: a >= b</li>
+            </ul>
+            </p>
+            <p>These conditions can be used in several ways, most commonly in "if statements" and loops. <br>
+
+                An "if statement" is written by using the if keyword. <br>
+
+                Example <br>
+                If statement: <br>
+            </p>
+            <code>a = 33 <br>
+                b = 200 <br>
+                if b > a: <br>
+                  print("b is greater than a")//b is greater than a </code>
+
+        </section>
+        <section class="main-section" id="Python_While_Loops">
+            <header>Python While Loops</header>
+            <p>With the while loop we can execute a set of statements as long as a condition is true.
+                <br>
+                Example <br>
+                Print i as long as i is less than 6:
+                <code>
+                    <pre>
+                        i = 1 
+                        while i < 6: 
+                            print(i)
+                            i +=1
+                    </pre>          
+                </code>
+                Note: remember to increment i, or else the loop will continue forever.
+                <br>
+                The while loop requires relevant variables to be ready, in this example we need to define an indexing
+                variable, i, which
+                we set to 1.
+            </p>
+        </section>
+        <section class="main-section" id="Python_For_Loops">
+            <header>Python For Loops</header>
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or
+                a string).
+
+                This is less like the for keyword in other programming languages, and works more like an iterator method
+                as found in
+                other object-orientated programming languages.
+
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc. <br>
+                Example
+                Print each fruit in a fruit list: <br>
+                <code>
+                    <pre>
+                        fruits = ["apple", "banana", "cherry"]
+                        for x in fruits:
+                          print(x)
+                    </pre>
+                </code>
+            </p>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All information is taken from:</p>
+            <a href="https://www.w3schools.com/python/default.asp">https://www.w3schools.com/python/default.asp</a>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
