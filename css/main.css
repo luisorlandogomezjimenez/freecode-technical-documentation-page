@@ -75,3 +75,54 @@ a.reference {
   text-decoration: none;
   font-size: 110%;
 }
+
+@media (max-width: 790px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    position: relative;
+    width: 90%;
+  }
+
+  ul.nav-bar {
+    padding: 0;
+    margin: auto;
+    height: 200px;
+    border: 1px solid rgb(48, 46, 46);
+    overflow-y: scroll;
+  }
+
+  ul.nav-bar li {
+    padding: 5px;
+  }
+  main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 5px;
+  }
+
+  header.nav-head {
+    padding: 5px;
+    position: relative;
+  }
+
+  code,
+  code pre {
+    font-size: 95%;
+    width: 90%;
+    padding: 5px 0;
+    margin: auto;
+    text-align: left;
+    white-space: pre-line;
+  }
+  #navbar {
+    border: none;
+    margin: auto;
+  }
+
+  a.reference {
+    font-size: 90%;
+    width: 90%;
+  }
+}
