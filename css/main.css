@@ -1,63 +1,77 @@
-*{
-    font-family: 'Nunito', sans-serif;
-    background: rgb(236, 228, 228);
+* {
+  font-family: "Nunito", sans-serif;
+  background: #eff2f1;
 }
 
-body{
-    display: flex;
+body {
+  display: flex;
 }
 
-nav{
-    width: 20%;
-    padding: 10px;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
-    
+nav {
+  width: 20%;
+  padding: 10px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-#navbar{
-    border-right: 2px solid rgb(135, 137, 165);
-    
+#navbar {
+  border-right: 2px solid rgb(135, 137, 165);
 }
-main{
-    margin-left: 23%;
-    width: 80%;
-    padding: 30px ;
-   
+main {
+  margin-left: 23%;
+  width: 80%;
+  padding: 30px;
 }
-header.nav-head{
-    font-size: 120%;
-    font-weight: bold;
-    text-align: left;
-    padding: 20px;
-    position: fixed;
+header.nav-head {
+  font-size: 140%;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  position: fixed;
 }
 
-ul{
-    list-style: none;
-    
+ul.nav-bar {
+  list-style: none;
 }
 
-ul.nav-bar{
-    padding: 20px 0;
-    margin-top: 50px;
-    overflow: auto;
+ul.nav-bar {
+  padding: 0;
+  margin-top: 70px;
+  overflow-y: scroll;
+  height: 83%;
 }
 
-ul.nav-bar li{
-    border-top: 1px solid rgb(48, 46, 46);
-    padding: 15px;
-    
+ul.nav-bar li {
+  border-top: 1px solid rgb(48, 46, 46);
+  padding: 15px;
 }
 
-
-a.nav-link{
-    text-decoration: none;
-    font-size: 110%;
-    text-align: left;
-    color: rgba(31, 29, 29, 0.87);
-    
+a.nav-link {
+  text-decoration: none;
+  font-size: 110%;
+  text-align: left;
+  color: rgba(31, 29, 29, 0.87);
 }
 
+header {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+code,
+code pre {
+  background: #b1c9df;
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px 0;
+  margin: auto;
+}
+
+a.reference {
+  color: #4059ad;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 110%;
+}

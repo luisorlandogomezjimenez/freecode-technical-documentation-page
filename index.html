@@ -55,15 +55,16 @@
             <p>Python is an interpreted programming language, this means that as a developer you write Python (.py)
                 files in a text editor and then put those files into the python interpreter to be executed. <br>
                 The way to run a python file is like this on the command line:</p>
-            <code>C:\Users\Your Name>python helloworld.py</code>
+
+            <code><pre>C:\Users\Your Name>python helloworld.py</pre></code>
             <p>Where "helloworld.py" is the name of your python file.<br>
                 Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
-            <code>print("Hello, World!")</code>
+            <code><pre>print("Hello, World!")</pre></code>
             <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your
                 file, and run:</p>
-            <code>C:\Users\Your Name>python helloworld.py</code>
+            <code><pre>C:\Users\Your Name>python helloworld.py</pre></code>
             <p>The output should read:</p>
-            <code>Hello, World!</code>
+            <code><pre>Hello, World!</pre></code>
             <p>Congratulations, you have written and executed your first Python program.</p>
         </section>
         <section class="main-section" id="Variables">
@@ -74,10 +75,13 @@
                 A variable is created the moment you first assign a value to it. <br>
                 Example:
             </p>
-            <code>x = 5 <br>
-                y = "John" <br>
-                print(x)//5 <br>
-                print(y)//John <br>
+            <code>
+                <pre>
+                x = 5 
+                y = "John" 
+                print(x)//5 
+                print(y)//John 
+                </pre>
             </code>
             <p>Variables do not need to be declared with any particular type and can even change type after they have
                 been set.</p>
@@ -100,7 +104,7 @@
             </ul>
 
             <h3>Getting the Data Type</h3>
-            <p>You can get the data type of any object by using the <code>type()</code> function.</p>
+            <p>You can get the data type of any object by using the type() function.</p>
         </section>
         <section class="main-section" id="Python_Collections">
             <header>Python Collections</header>
@@ -123,13 +127,19 @@
                 Example <br>
                 Create a List:
             </p>
-            <code>thislist = ["apple", "banana", "cherry"] <br>
-                print(thislist)//['apple', 'banana', 'cherry']</code>
+            <code>
+                <pre>
+                thislist = ["apple", "banana", "cherry"] 
+                print(thislist)//['apple', 'banana', 'cherry']</pre>
+            </code>
             <p>You access the list items by referring to the index number: <br>
                 Example <br>
                 Print the second item of the list:</p>
-            <code>thislist = ["apple", "banana", "cherry"] <br>
-                print(thislist[1])//banana</code> <br> <br>
+            <code>
+                <pre>
+                thislist = ["apple", "banana", "cherry"] 
+                print(thislist[1])//banana</pre>
+            </code>
         </section>
         <section class="main-section" id="Tuple">
             <header>Tuple</header>
@@ -138,13 +148,19 @@
                 Example <br>
                 Create a Tuple:
             </p>
-            <code>thistuple = ("apple", "banana", "cherry") <br>
-                print(thistuple)//('apple', 'banana', 'cherry')</code>
+            <code>
+                <pre>
+                thistuple = ("apple", "banana", "cherry") 
+                print(thistuple)//('apple', 'banana', 'cherry')</pre>
+            </code>
             <p>You can access tuple items by referring to the index number, inside square brackets: <br>
                 Example <br>
                 Print the second item in the tuple:</p>
-            <code>thistuple = ("apple", "banana", "cherry") <br>
-                print(thistuple[1])//banana</code> <br><br>
+            <code>
+                <pre>
+                thistuple = ("apple", "banana", "cherry") 
+                print(thistuple[1])//banana</pre>
+                </code>
 
         </section>
 
@@ -155,8 +171,11 @@
                 Example <br>
                 Create a Set:
             </p>
-            <code>thisset = {"apple", "banana", "cherry"} <br>
-                print(thisset)//{'apple', 'cherry', 'banana'}</code>
+            <code>
+                <pre>
+                thisset = {"apple", "banana", "cherry"} 
+                print(thisset)//{'apple', 'cherry', 'banana'}</pre>
+            </code>
             <p>Note: Sets are unordered, so you cannot be sure in which order the items will appear.</p>
             <p>You cannot access items in a set by referring to an index, since sets are unordered the items has no
                 index. <br>
@@ -170,22 +189,29 @@
 
                 Example <br>
                 Create and print a dictionary:</p>
-            <code>thisdict = { <br>
-                "brand": "Ford",<br>
-                "model": "Mustang",<br>
-                "year": 1964 <br>
-              } <br>
-              print(thisdict)//{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}</code>
+            <code>
+                <pre>
+                thisdict = { 
+                "brand": "Ford",
+                "model": "Mustang",
+                "year": 1964 
+              } 
+              print(thisdict)//{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}</pre>
+            </code>
             <p>You can access the items of a dictionary by referring to its key name, inside square brackets: <br>
 
                 Example <br>
                 Get the value of the "model" key:</p>
-            <code>x = thisdict["model"]//Mustang</code>
+            <code>
+                <pre>
+                x = thisdict["model"]//Mustang</pre></code>
             <p>There is also a method called get() that will give you the same result: <br>
 
                 Example <br>
                 Get the value of the "model" key:</p>
-            <code>x = thisdict.get("model")//Mustang</code><br><br>
+            <code><pre>
+                x = thisdict.get("model")//Mustang
+            </pre></code>
         </section>
         <section class="main-section" id="Python_Conditions_and_If_statements">
             <header>Python Conditions and If statements</header>
@@ -206,10 +232,13 @@
                 Example <br>
                 If statement: <br>
             </p>
-            <code>a = 33 <br>
-                b = 200 <br>
-                if b > a: <br>
-                  print("b is greater than a")//b is greater than a </code>
+            <code>
+                <pre>
+                a = 33 
+                b = 200 
+                if b > a: 
+                  print("b is greater than a")//b is greater than a </pre>
+                </code>
 
         </section>
         <section class="main-section" id="Python_While_Loops">
@@ -218,16 +247,17 @@
                 <br>
                 Example <br>
                 Print i as long as i is less than 6:
-                <code>
+            </p>
+            <code>
                     <pre>
-                        i = 1 
+                    i = 1 
                         while i < 6: 
                             print(i)
-                            i +=1
-                    </pre>          
-                </code>
-                Note: remember to increment i, or else the loop will continue forever.
-                <br>
+                            i +=1      </pre>
+                        </code>
+            Note: remember to increment i, or else the loop will continue forever.
+            <br>
+            <p>
                 The while loop requires relevant variables to be ready, in this example we need to define an indexing
                 variable, i, which
                 we set to 1.
@@ -244,21 +274,22 @@
 
                 With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc. <br>
                 Example
-                Print each fruit in a fruit list: <br>
-                <code>
+                Print each fruit in a fruit list: </p>
+            <code>
                     <pre>
-                        fruits = ["apple", "banana", "cherry"]
-                        for x in fruits:
-                          print(x)
-                    </pre>
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                    print(x)
+                    </pre>                        
                 </code>
-            </p>
+
         </section>
 
         <section class="main-section" id="Reference">
             <header>Reference</header>
             <p>All information is taken from:</p>
-            <a href="https://www.w3schools.com/python/default.asp">https://www.w3schools.com/python/default.asp</a>
+            <a href="https://www.w3schools.com/python/default.asp"
+                class="reference">https://www.w3schools.com/python/default.asp</a>
         </section>
 
     </main>
